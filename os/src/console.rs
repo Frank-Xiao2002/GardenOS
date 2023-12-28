@@ -1,4 +1,3 @@
-
 use crate::sbi::console_putchar;
 use core::fmt::{self, Write};
 struct Stdout;
@@ -25,4 +24,3 @@ macro_rules! println {
         $crate::console::print(format_args!(concat!($fmt, "\n") $(, $($arg)+)?));
     }
 }
-
